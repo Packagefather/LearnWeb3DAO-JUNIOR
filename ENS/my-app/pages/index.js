@@ -115,7 +115,7 @@ export default function Home() {
             Welcome to LearnWeb3 Punks {ens ? ens : address}!
           </h1>
           <div className={styles.description}>
-            Its an NFT collection for LearnWeb3 Punks.
+            It's an NFT collection for LearnWeb3 Punks.
           </div>
           {renderButton()}
         </div>
