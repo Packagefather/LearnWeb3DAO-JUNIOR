@@ -28,9 +28,9 @@ import { Contract, providers, utils } from "ethers";
           const nftContract = new Contract(NFT_CONTRACT_ADDRESS, abi, signer);
           // call the mint from the contract to mint the LW3Punks
           const tx = await nftContract.mint({
-            // value signifies the cost of one LW3Punks which is "0.01" eth.
-            // We are parsing `0.01` string to ether using the utils library from ethers.js
-            value: utils.parseEther("0.01"),
+            // value signifies the cost of one LW3Punks which is "0.0001" eth.
+            // We are parsing `0.0001` string to ether using the utils library from ethers.js
+            value: utils.parseEther("0.0001"),
           });
           setLoading(true);
           // wait for the transaction to get mined
@@ -168,9 +168,9 @@ import { Contract, providers, utils } from "ethers";
           </Head>
           <div className={styles.main}>
             <div>
-              <h1 className={styles.title}>Welcome to LW3Punks!</h1>
+              <h1 className={styles.title}>Welcome to Dev3Punks!</h1>
               <div className={styles.description}>
-                It's an NFT collection for LearnWeb3 students.
+                It's an NFT collection for deveopers.
               </div>
               <div className={styles.description}>
                 {tokenIdsMinted}/10 have been minted
